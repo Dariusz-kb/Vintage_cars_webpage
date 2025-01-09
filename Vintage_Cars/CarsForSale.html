@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>   
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="myScript.js"></script>
+     <!-- Google fonts links-->
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Ephesis&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anek+Kannada:wght@500&family=Galada&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anek+Kannada:wght@300&family=Galada&display=swap" rel="stylesheet">
+
+  <!-- Title of the page -->
+<title>Vintage Cars | Classic Car Collection</title>
+<!-- The meta description provides a brief summary of the page content -->
+<meta name="description" content="Check out our current stock of vintage cars for sale. We offer warranty, roadside assistance and finance on all sales. Award winning car dealership for car enthusiasts.">
+
+    <!-- css stylesheet file link-->
+    <link rel="stylesheet" href="Style/myStyle.css">
+</head>
+
+<body background="Images/background.jpg">
+  <!-- Photo by Mike Bird: https://www.pexels.com/photo/jaguar-emblem-on-black-car-192501/-->
+
+  <!-- header -->
+  <header>
+    <!-- main title div containing logo link and title when the user clicks on the logo, the browser will display the homepage-->
+    <div class="mainTitle">
+      <div class="logo">
+        <a href="index.html">
+          <img src="Images/car.png" alt="logo" height="50px"> 
+          <!--Car logo icons created by Freepik - Flaticon-->
+        </a>
+      </div>
+      <div class="titleTextDiv">
+        <h1> Vintage Cars Ireland </h1>
+      </div>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#MainNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="MainNavbar">
+        <ul class="nav navbar-nav" id="NavLinks">
+          <li class="navbar-link"><a href="index.html">Home</a></li>
+          <li class="navbar-link"><a href="CarsForSale.html">Cars for sale</a></li>
+          <li class="navbar-link"><a href="service.html">Service</a></li>
+          <li class="navbar-link"><a href="game.html">Mini game</a></li>
+          <li class="navbar-link"><a href="ValueCar.html">Value car</a></li>
+          <li class="navbar-link"><a href="contactUs.html">Contact us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--title of gallery-->
+  <div class="carsforsaleintrotext">
+    <h2>Current vintage car stock</h2>
+  </div>
+  <hr>
+
+
+  <!--start of gallery-->
+  <div class="gallery">
+    <!--first row of gallery-->
+    <div class="row1">
+      <!--first column, 4 parts wide of 12-->  
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <!--gallery picture class with JS displayDetails(this) method on click of picture-->
+          <div class="gallerypicture" onclick="displayDetails(this)">
+              <!--Photo by <a href="https://unsplash.com/@karolsmoczynski?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Karol Smoczynski</a> on <a href="https://unsplash.com/photos/white-volkswagen-beetle-hatchback-parked-near-post-IpMw1iGXgvU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>-->
+              <img src="Images/karol-smoczynski-IpMw1iGXgvU-unsplash.jpg" alt="Car" >
+              <!--image text to appear on click-->
+              <div class="imagetext">
+                <p>VW - Beetle, 1965 ,€17,000<p>
+              </div> 
+          </div>      
+        </div>
+      </div>
+
+      <!--second pic of first row with same functionaility added and different text descbribing that particular car to appear-->
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <div class="gallerypicture" onclick="displayDetails(this)">
+              <!--Photo by <a href="https://unsplash.com/@eadutskevich?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Evgeni Adutskevich</a> on <a href="https://unsplash.com/photos/a-car-parked-on-a-brick-road-9D6rM3LdKoU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>-->
+              <img src="Images/evgeni-adutskevich-9D6rM3LdKoU-unsplash.jpg" alt="Car" >
+              <div class="imagetext">
+                <p>Packard - TT7, 1950, €34,000</p>
+              </div> 
+          </div>      
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <div class="gallerypicture" onclick="displayDetails(this)">
+            <!--Photo by <a href="https://unsplash.com/@sonance?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Viktor Forgacs</a> on <a href="https://unsplash.com/photos/parked-gray-vehicle-near-fence-5coOJ1LzHds?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>-->
+            <img src="Images/viktor-forgacs-5coOJ1LzHds-unsplash.jpg" alt="Car" >
+            <div class="imagetext">
+              <p>Morris minor - 2, 1958, €23,000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!--end of row-->
+
+
+
+
+    <!--second row of gallery, 3 different cars advertised with there own text using the same displayDetails(this) js function-->
+    <div class="row2">
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <div class="gallerypicture" onclick="displayDetails(this)">
+              <!--  Photo by Daniel Ellis: https://www.pexels.com/photo/vintage-car-rally-and-campers-in-green-field-9609030/-->
+              <img src="Images/pexels-daniel-ellis-9609030.jpg" alt="Car">
+              <div class="imagetext">
+                <p>Mini - Cooper, 1973, €12,000</p>
+              </div> 
+          </div>      
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <div class="gallerypicture" onclick="displayDetails(this)">
+              <!--Photo by murat soyluoglu: https://www.pexels.com/photo/photography-of-orange-volkswagen-beetle-1209774/-->
+              <img src="Images/pexels-murat-soyluoglu-1209774.jpg" alt="Car">
+              <div class="imagetext">
+                <p>VW - Beetle, €19,000</p>
+              </div> 
+          </div>      
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <div class="gallerypicture" onclick="displayDetails(this)">
+            <!--Photo by Justus Menke: https://www.pexels.com/photo/cars-parked-under-a-tree-5214193/-->
+            <img src="Images/pexels-justus-menke-5214193.jpg" alt="Car" >
+            <div class="imagetext">
+              <p>Mercedes - R107, 1981, €30,000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--third row of gallery, 3 different cars advertised with there own text using the same displayDetails(this) js function-->
+    <div class="row3">
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <div class="gallerypicture" onclick="displayDetails(this)">
+            <!--Photo by <a href="https://unsplash.com/@stuartgarage?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Stuart Garage</a> on <a href="https://unsplash.com/photos/blue-porsche-911-parked-in-front-of-white-building-A_ufRdIkxM8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>-->
+            <img src="Images/stuart-garage-A_ufRdIkxM8-unsplash.jpg" alt="Car">
+              <div class="imagetext">
+                <p>Porsch - Carrera, 1984, €32,000</p>
+              </div> 
+          </div>      
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <div class="gallerypicture" onclick="displayDetails(this)">
+            <!--Photo by <a href="https://unsplash.com/@hayespotter?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Hayes Potter</a> on <a href="https://unsplash.com/photos/grey-bmw-coupe-dHuKem53H0w?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>-->
+            <img src="Images/hayes-potter-dHuKem53H0w-unsplash.jpg" alt="Car">
+            <div class="imagetext">
+              <p>BMW - 320i, 1987, €22,000</p>
+            </div> 
+          </div>      
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <div class="gallerypicture" onclick="displayDetails(this)">
+            <!--Photo by <a href="https://unsplash.com/@eadutskevich?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Evgeni Adutskevich</a> on <a href="https://unsplash.com/photos/a-car-parked-on-a-brick-road-p94BTRFWCJA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>>-->
+            <img src="Images/evgeni-adutskevich-p94BTRFWCJA-unsplash.jpg" alt="Car">
+            <div class="imagetext">
+              <p>Mercedes - 300 SI, 1969, €34,000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--fourth row of gallery, 3 different cars advertised with there own text using the same displayDetails(this) js function-->
+    <div class="row4">
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <div class="gallerypicture" onclick="displayDetails(this)">
+            <!--Photo by FBO Media: https://www.pexels.com/photo/red-tuned-bmw-e30-17918285/-->
+            <img src="Images/pexels-fbo-media-17918285.jpg" alt="Car">
+            <div class="imagetext">
+              <p>BMW - M5, 1989, €19,000</p>
+            </div> 
+          </div>      
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <div class="gallerypicture" onclick="displayDetails(this)">
+            <!--Photo by <a href="https://unsplash.com/@bydanielandrade?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Daniel Andrade</a> on <a href="https://unsplash.com/photos/white-mercedes-benz-c-class-on-road-during-daytime-m5F2fs0unK8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>>-->
+            <img src="Images/daniel-andrade-m5F2fs0unK8-unsplash.jpg" alt="Car">
+            <div class="imagetext">
+            <p>VW - Golf GTI, 1988, €15,000</p>
+            </div> 
+          </div>      
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <div class="gallerypicture" onclick="displayDetails(this)">
+            <!--Photo by <a Photo by <a href="https://unsplash.com/@cakirchoff?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Chad Kirchoff</a> on <a href="https://unsplash.com/photos/black-convertible-coupe-park-on-gray-road-pcwVJCSq5_k?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>-->
+            <img src="Images/chad-kirchoff-pcwVJCSq5_k-unsplash.jpg" alt="Car" >
+            <div class="imagetext">
+              <p>Chevrolet - Chevelle, 1974, €25,000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!--end of last row of gallery-->
+  </div><!--end of gallery-->
+
+ 
+
+  <!--4 grid layout text below gallery-->
+  <div class="row text-center" id="buyeroptionscontainer">
+    <!--first column with logo and finance info-->
+    <div class="col-sm-3">
+      <img src="Images/money-bag.png" alt="Money" height="30px">
+      <!--Money bag logo icons created by Smashicons - Flaticon-->
+      <h3>Finance</h3>
+      <p>Contact us about our</p>
+      <p>finance options available.</p>
+    </div>
+    <!--second column with logo and warranty info-->
+    <div class="col-sm-3">
+      <img src="Images/guarantee.png" alt="Gaurantee" height="30px">
+        <!--Gaurentee logo icons created by cahiwak - Flaticon-->
+        <h3>Warranty</h3>
+      <p>We offer a 12 month</p>
+      <p> warranty on all cars.</p>
+    </div>  
+    <!--third column with logo and roadside assistance info-->
+    <div class="col-sm-3">
+      <img src="Images/wrench.png" alt="wrench" height="30px">
+      <!--Gaurentee logo icons created by cahiwak - Flaticon-->
+      <h3>Roadside Assistance</h3>
+      <p>Roadside assistance packages</p>
+      <p>on new purchases.</p>
+    </div>
+    <!--fourth colum with logo and contact info including a link to the contact us page-->
+    <div class="col-sm-3">
+      <img src="Images/contact-mail.png" alt="Contact" height="30px">
+      <!--Gaurentee logo icons created by cupoto - Flaticon-->
+      <h3>Contact Us</h3>
+      <p>Interested? Head on over</p>
+      <p>to our <a href="contactUs.html">contact us</a> page.</p>
+    </div>
+  </div> <!-- end of grid-->
+
+
+
+
+  <!--4 grid layout footer-->
+  <!-- footer with four columns, last column contains link to about us page-->
+  <footer class="container-fluid text-center">
+    <div class="column1">
+      <p>Vintage Cars Ireland</p>
+      <img src="Images/instagram.png" alt="instagram logo" height="30px">&nbsp;&nbsp;&nbsp;&nbsp;
+      <img src="Images/facebook.png" alt="facebook logo" height="30px">&nbsp;&nbsp;&nbsp;&nbsp;
+      <img src="Images/whatsapp.png" alt="whatsapp logo" height="30px">&nbsp;&nbsp;&nbsp;&nbsp;
+      <img src="Images/youtube.png" alt="youtube logo" height="30px">&nbsp;&nbsp;
+      <!--Instagram logo icons created by Freepik - Flaticon-->
+      <!--Facebook logo icons created by Freepik - Flaticon-->
+      <!--Whatsapp logo icons created by Freepik - Flaticon-->
+      <!--Youtube logo icons created by Freepik - Flaticon-->
+    </div>
+    <div class="column2">
+        <p>Terms and conditions</p>
+        <p>Private policy.</p>
+        <p>Payment methods.</p> 
+    </div>
+    
+    <div class="column3">
+      <div class="phonenumber">
+        <p><img src="Images/phone-flip.png" alt="phone symbol" height="20px">&nbsp;&nbsp;&nbsp;&nbsp;051 278 8932</p>
+      </div>
+      <p>Copyright © 2023, Vintage Cars Ireland</p>
+      <p>All rights reserved.</p>
+    </div>  
+
+    <div class="column4">
+        <p><img src="Images/map-marker.png" alt="map symbol" height="20px">&nbsp;&nbsp;&nbsp;&nbsp;27 O'Brien Street</p>
+        <p>Ballyboden</p>
+        <p>Co. Dublin</p>
+    </div>
+  </footer> <!--end of footer-->
+<!-- end of body-->
+</body>
+<!-- end of html-->
+</html>
+
+

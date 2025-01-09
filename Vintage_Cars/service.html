@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="myScript.js"></script>
+  <!-- Google fonts links-->
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Ephesis&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anek+Kannada:wght@500&family=Galada&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anek+Kannada:wght@300&family=Galada&display=swap" rel="stylesheet">
+
+<!-- Title of the page -->
+<title>Vintage Cars | Classic Car Collection</title>
+<!-- The meta description provides a brief summary of the page content -->
+<meta name="description" content="Explore our services that we provide. Our mechanics have years of experience in classic cars service and we guarantee high quality service.">
+    
+<!-- css stylesheet file link-->
+    <link rel="stylesheet" href="Style/myStyle.css">
+
+</head>
+
+    <!-- Use of background image-->
+    <body background="Images/background.jpg">
+        <!-- Photo by Mike Bird: https://www.pexels.com/photo/jaguar-emblem-on-black-car-192501/-->
+
+    <!-- header -->
+    <header>
+        <!-- main title div containing logo link and title 
+        when the user clicks on the logo,
+         the browser will display the homepage-->
+        <div class="mainTitle">
+            <div class="logo">
+                <a href="index.html">
+                  <img src="Images/car.png" alt="logo" height="50px"> 
+                  <!--Car logo icons created by Freepik - Flaticon-->
+                </a>
+            </div>
+            <!-- div containing main title of the page-->
+            <div class="titleTextDiv">
+                <h1> Vintage Cars Ireland </h1>
+            </div>
+        </div>
+    </header>
+    <!-- Navigation bar with links to other web pages
+         it uses bootstrap framework classes-->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#MainNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="MainNavbar">
+            <ul class="nav navbar-nav" id="NavLinks">
+              <li class="navbar-link"><a href="index.html">Home</a></li>
+              <li class="navbar-link"><a href="CarsForSale.html">Cars for sale</a></li>
+              <li class="navbar-link"><a href="service.html">Service</a></li>
+              <li class="navbar-link"><a href="game.html">Mini game</a></li>
+              <li class="navbar-link"><a href="ValueCar.html">Value car</a></li>
+              <li class="navbar-link"><a href="contactUs.html">Contact us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!--heading of page-->
+  <div class="availableservicesheadding text-center">
+    <h2>Available services</h2>
+  </div>
+  <hr>
+
+    <div class="container-fluid text-center">
+        <div class="row content">
+
+            <div id="page3apparent">
+                <br><br>
+                <div id="abg"></div> <br><br>
+
+                <div id="ServiceType"> Find out the most suitable Service
+                    for your car! </div> <br>
+
+                <form id="carForm">
+                    <div>
+                        <label for="carYear">What year was your car
+                            manufactured?</label>
+                        <select id="carYear">
+                            <!-- Populate with actual car makes and models -->
+                            <option value="Year1"> Before 1970 </option>
+                            <option value="Year2"> 1970-1990 </option>
+                            <option value="Year3"> 1990-2005 </option>
+                            <option value="Year4"> After 2005 </option>
+                            <!-- ... -->
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="carMileage">What is the current mileage
+                            of
+                            your car?</label>
+                        <select id="carMileage">
+                            <option value="0-30000">0 - 30,000 km</option>
+                            <option value="30001-80000">30,001 - 80,000 km</option>
+                            <option value="80001-160000">80,001 - 160,000 km</option>
+                            <option value="160000+">Over 160,000 km</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="UsageFrequency">How often do you use
+                            your
+                            car?</label>
+                        <select id="UsageFrequency" style="width: 150px">
+                            <option value="Daily">Daily </option>
+                            <option value="Weekly">Weekly</option>
+                            <option value="Monthly">Monthly</option>
+                            <option value="Rarely">Rarely</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="ServiceDate">When was your car last
+                            serviced?</label>
+                        <select id="ServiceDate">
+                            <option value="Less than 6 months ago"> Less
+                                than 6
+                                months
+                                ago</option>
+                            <option value="6 months to 1 year ago">6 months
+                                to 1
+                                year
+                                ago</option>
+                            <option value="1-2 years ago"> 1-2 years ago</option>
+                            <option value="Over 2 years ago">Over 2 years
+                                ago</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="StorageConditions">How is your car
+                            usually
+                            stored?</label>
+                        <select id="StorageConditions">
+                            <option value="Indoor Car Storage Facility">
+                                Indoor
+                                Car
+                                Storage Facility</option>
+                            <option value="Garage">Garage</option>
+                            <option value="Covered outdoor area"> Covered
+                                outdoor area</option>
+                            <option value="Uncovered outdoor area">
+                                Uncovered
+                                outdoor
+                                area</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="PrimaryUse">What is the primary use of
+                            your
+                            car?</label>
+                        <select id="PrimaryUse">
+                            <option value="Daily transportation"> Daily
+                                transportation</option>
+                            <option value="Recreational/Weekend drives">Recreational/Weekend
+                                drives</option>
+                            <option value="Car shows/Exhibitions"> Car
+                                shows/Exhibitions</option>
+                            <option value="Collectible/Not in use">
+                                Collectible/Not in
+                                use</option>
+                        </select>
+                    </div>
+                    <br>
+                    <button type="button" onclick="showServices()">Find
+                        Service</button>
+                </form>
+
+                <br>
+
+                <div id="themostsuitableservice"> The most suitable service
+                    for your car is... </div>
+
+                <div id="routineMaintenanceService" style="display: none;">Routine
+                    Maintenance Service</div>
+                <div id="restorationService" style="display: none;">Restoration
+                    Service
+                </div>
+                <div id="preservationService" style="display: none;">Preservation
+                    Service</div>
+                <div id="performanceEnhancementService"
+                    style="display: none;">Performance
+                    Enhancement Service</div>
+
+                <br><br><br>
+            
+            <div class="container" style=" width: 80%;">
+                <div class="row text-center">
+                    <div class="col-sm-6">
+                     <!-- First Image and Description -->
+                        <div class="image-container"
+                                onclick="showDescription('image1-description', 'image1-booking')">
+                                <img src="Images/FlorianOlivo.jpg" class="img-responsive" width="250px"
+                                    alt="Restoration Service">
+                                <!-- Image by Florian Olivo - Unsplash -->
+                                <h3>Restoration Service</h3>
+                                <div id="image1-description"
+                                    class="description">
+                                    <p>Our Restoration Service is designed
+                                        to
+                                        bring
+                                        vintage cars back to their former
+                                        glory.
+                                        Whether
+                                        your car is a classic beauty or a
+                                        historic gem,
+                                        we have the expertise to
+                                        meticulously
+                                        restore it
+                                        to its original condition. We
+                                        specialise
+                                        in
+                                        preserving the authenticity and
+                                        charm of
+                                        vintage
+                                        vehicles, making them shine like
+                                        they
+                                        just
+                                        rolled off the assembly line.</p>
+                                    <button
+                                        onclick="showBookingForm('image1-booking')">Book
+                                        Now</button>
+                                </div>
+                            </div>
+
+
+
+
+                    </div>
+
+                    <div class="col-sm-6">
+
+                        <!-- Second Image and Description -->
+                        <div class="image-container"
+                        onclick="showDescription('image2-description', 'image2-booking')">
+                        <img src="Images/MarkusSpiske.jpg" class="img-responsive" width="250px"
+                            alt="Preservation Service">
+                        <!-- Image by Markus Spiske - Unsplash -->
+                        <h3>Preservation Service</h3>
+                        <div id="image2-description"
+                            class="description">
+                            <p>Our Preservation Service is perfect
+                                for
+                                vintage
+                                car owners who want to maintain and
+                                protect
+                                their vehicles for the long haul. We
+                                offer
+                                advanced preservation techniques to
+                                safeguard
+                                your car's beauty and value. Whether
+                                your car is
+                                a garage queen or an outdoor
+                                enthusiast,
+                                we have
+                                preservation solutions tailored to
+                                your
+                                needs.</p>
+                            <button
+                                onclick="showBookingForm('image2-booking')">Book
+                                Now</button>
+                        </div>
+                    </div>
+
+
+                    </div>
+
+
+                
+                </div>
+            <!-- </div> -->
+           <!--  <div class="container" style="display: flex; justify-content: center; width: 80%;"> -->
+            <div class="row text-center">
+                <div class="col-sm-6">
+                    <!-- Third Image and Description -->
+                    <div class="image-container"
+                    onclick="showDescription('image3-description', 'image3-booking')">
+                    <img src="Images/EgorVikhrev.jpg" class="img-responsive" width="250px"
+                        alt="Routine Maintenance Service">
+                    <!-- Image by Egor Vikhrev - Unsplash -->
+                    <h3>Routine Maintenance Service</h3>
+                    <div id="image3-description"
+                        class="description">
+                        <p>Our Routine Maintenance Service
+                            ensures
+                            that your
+                            vintage car stays in top condition
+                            for
+                            your
+                            everyday adventures. We provide
+                            regular
+                            maintenance and inspections to keep
+                            your
+                            vehicle
+                            running smoothly and safely. Whether
+                            you
+                            use
+                            your car daily or for weekend
+                            drives,
+                            our team
+                            is here to maintain its reliability.</p>
+                        <button
+                            onclick="showBookingForm('image3-booking')">Book
+                            Now</button>
+                        </div>
+                </div>
+            </div>
+
+                <div class="col-sm-6">
+                    <!-- Fourth Image and Description -->
+                    <div class="image-container"
+                                onclick="showDescription('image4-description', 'image4-booking')">
+                                <img src="Images/JohannesGiez.jpg" class="img-responsive" width="250px"
+                                    alt="Performance Enhancement Service">
+                                <!-- Image by Johannes Giez - Unsplash -->
+                                <h3>Performance Enhancement Service</h3>
+                                <div id="image4-description"
+                                    class="description">
+                                    <p>Elevate your vintage car's
+                                        performance
+                                        with our
+                                        Performance Enhancement Service.
+                                        Whether
+                                        you
+                                        crave more power, better handling,
+                                        or
+                                        improved
+                                        responsiveness, our experts can
+                                        fine-tune your
+                                        vehicle to meet your desires. We
+                                        specialise in
+                                        enhancing the driving experience
+                                        while
+                                        preserving the car's unique
+                                        character.</p>
+                                    <button
+                                        onclick="showBookingForm('image4-booking')">Book
+                                        Now</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+            
+                
+
+
+            </div>
+        </div>
+
+
+            <div id="page3apparent2">
+                <br><br>
+                <div id="abg"></div> <br><br>
+
+                <!-- Booking Forms for Each Image -->
+                <br><br><br>
+                <form id="image1-booking" class="booking-form">
+                    <h2>Booking Form for Restoration Service</h2>
+
+                    <label for="name1">Name:</label>
+                    <input type="text" id="name1" name="name" minlength="3"
+                        maxlength="20" required>
+                    <br><br>
+
+                    <label for="phone1">Phone:</label>
+                    <input type="tel" id="phone1" name="phone"
+                        maxlength="10"
+                        required>
+                    <br><br>
+
+                    <label for="email1">Email:</label>
+                    <input type="email" id="email1" name="email">
+                    <br><br>
+
+                    <label>Choose how you want to be contacted!</label> <br><br>
+                    <input type="radio" id="phone_contact1"
+                        name="contactmethod1"
+                        value="phone" required>
+                    <label for="phone_contact1">Phone</label>
+                    <input type="radio" id="email_contact1"
+                        name="contactmethod1"
+                        value="email" required>
+                    <label for="email_contact1">Email</label>
+                    <br><br>
+
+                    <label for="date1">Date:</label>
+                    <input type="date" id="date1" name="date"
+                        min="2023-10-28"
+                        max="2024-12-31" required>
+                    <br><br>
+
+                    <label for="time1">Time:</label>
+                    <input type="time" id="time1" name="time" min="12:00"
+                        max="22:30"
+                        required>
+                    <br><br>
+
+                    <label for="payment_type1">Select your payment type:</label>
+                    <select id="payment_type1" name="payment_type">
+                        <option value="cash">Cash</option>
+                        <option value="card">Debit/Credit Card</option>
+                        <option value="voucher">Voucher</option>
+                        <option value="bitcoin">Bitcoin</option>
+                    </select>
+                    <br><br>
+
+                    <label for="special_request1">Any Requests or anything
+                        we
+                        need to
+                        know beforehand?</label> <br>
+                    <textarea id="special_request1" name="special_request"
+                        cols="30"
+                        rows="10"></textarea>
+                    <br><br>
+
+                    <input type="checkbox" id="cancellation1"
+                        name="cancellation"
+                        required>
+                    <label for="cancellation1">Any cancellation means no
+                        refund</label>
+                    <br>
+
+                    <input type="checkbox" id="newsletter1"
+                        name="newsletter">
+                    <label for="newsletter1">I want to subscribe to the
+                        monthly
+                        newsletter</label>
+                    <br><br>
+
+                    <input type="submit" value="Book a Service">
+                    <br><br>
+                </form>
+
+                <form id="image2-booking" class="booking-form">
+                    <h3>Preservation Service</h3>
+                    <label for="name1">Name:</label>
+                    <input type="text" id="name1" name="name" minlength="3"
+                        maxlength="20" required>
+                    <br><br>
+
+                    <label for="phone1">Phone:</label>
+                    <input type="tel" id="phone1" name="phone"
+                        maxlength="10"
+                        required>
+                    <br><br>
+
+                    <label for="email1">Email:</label>
+                    <input type="email" id="email1" name="email">
+                    <br><br>
+
+                    <label>Choose how you want to be contacted!</label> <br><br>
+                    <input type="radio" id="phone_contact1"
+                        name="contactmethod1"
+                        value="phone" required>
+                    <label for="phone_contact1">Phone</label>
+                    <input type="radio" id="email_contact1"
+                        name="contactmethod1"
+                        value="email" required>
+                    <label for="email_contact1">Email</label>
+                    <br><br>
+
+                    <label for="date1">Date:</label>
+                    <input type="date" id="date1" name="date"
+                        min="2023-10-28"
+                        max="2024-12-31" required>
+                    <br><br>
+
+                    <label for="time1">Time:</label>
+                    <input type="time" id="time1" name="time" min="09:00"
+                        max="22:30"
+                        required>
+                    <br><br>
+
+                    <label for="payment_type1">Select your payment type:</label>
+                    <select id="payment_type1" name="payment_type">
+                        <option value="cash">Cash</option>
+                        <option value="card">Debit/Credit Card</option>
+                        <option value="voucher">Voucher</option>
+                        <option value="bitcoin">Bitcoin</option>
+                    </select>
+                    <br><br>
+
+                    <label for="special_request1">Any Requests or anything
+                        we
+                        need to
+                        know beforehand?</label> <br>
+                    <textarea id="special_request1" name="special_request"
+                        cols="30"
+                        rows="10"></textarea>
+                    <br><br>
+
+                    <input type="checkbox" id="cancellation1"
+                        name="cancellation"
+                        required>
+                    <label for="cancellation1">Any cancellation means no
+                        refund</label>
+                    <br>
+
+                    <input type="checkbox" id="newsletter1"
+                        name="newsletter">
+                    <label for="newsletter1">I want to subscribe to the
+                        monthly
+                        newsletter</label>
+                    <br><br>
+
+                    <input type="submit" value="Book a Service">
+                    <br><br>
+                </form>
+
+                <form id="image3-booking" class="booking-form">
+                    <h3> Routine Maintenance Service</h3>
+                    <label for="name1">Name:</label>
+                    <input type="text" id="name1" name="name" minlength="3"
+                        maxlength="20" required>
+                    <br><br>
+
+                    <label for="phone1">Phone:</label>
+                    <input type="tel" id="phone1" name="phone"
+                        maxlength="10"
+                        required>
+                    <br><br>
+
+                    <label for="email1">Email:</label>
+                    <input type="email" id="email1" name="email">
+                    <br><br>
+
+                    <label>Choose how you want to be contacted!</label> <br><br>
+                    <input type="radio" id="phone_contact1"
+                        name="contactmethod1"
+                        value="phone" required>
+                    <label for="phone_contact1">Phone</label>
+                    <input type="radio" id="email_contact1"
+                        name="contactmethod1"
+                        value="email" required>
+                    <label for="email_contact1">Email</label>
+                    <br><br>
+
+                    <label for="date1">Date:</label>
+                    <input type="date" id="date1" name="date"
+                        min="2023-10-28"
+                        max="2024-12-31" required>
+                    <br><br>
+
+                    <label for="time1">Time:</label>
+                    <input type="time" id="time1" name="time" min="12:00"
+                        max="22:30"
+                        required>
+                    <br><br>
+
+                    <label for="payment_type1">Select your payment type:</label>
+                    <select id="payment_type1" name="payment_type">
+                        <option value="cash">Cash</option>
+                        <option value="card">Debit/Credit Card</option>
+                        <option value="voucher">Voucher</option>
+                        <option value="bitcoin">Bitcoin</option>
+                    </select>
+                    <br><br>
+
+                    <label for="special_request1">Any Requests or anything
+                        we
+                        need to
+                        know beforehand?</label> <br>
+                    <textarea id="special_request1" name="special_request"
+                        cols="30"
+                        rows="10"></textarea>
+                    <br><br>
+
+                    <input type="checkbox" id="cancellation1"
+                        name="cancellation"
+                        required>
+                    <label for="cancellation1">Any cancellation means no
+                        refund</label>
+                    <br>
+
+                    <input type="checkbox" id="newsletter1"
+                        name="newsletter">
+                    <label for="newsletter1">I want to subscribe to the
+                        monthly
+                        newsletter</label>
+                    <br><br>
+
+                    <input type="submit" value="Book a Service">
+                    <br><br>
+                </form>
+
+                <form id="image4-booking" class="booking-form">
+                    <h3>Performance Enhancement Service</h3>
+                    <label for="name1">Name:</label>
+                    <input type="text" id="name1" name="name" minlength="3"
+                        maxlength="20" required>
+                    <br><br>
+
+                    <label for="phone1">Phone:</label>
+                    <input type="tel" id="phone1" name="phone"
+                        maxlength="10"
+                        required>
+                    <br><br>
+
+                    <label for="email1">Email:</label>
+                    <input type="email" id="email1" name="email">
+                    <br><br>
+
+                    <label>Choose how you want to be contacted!</label> <br><br>
+                    <input type="radio" id="phone_contact1"
+                        name="contactmethod1"
+                        value="phone" required>
+                    <label for="phone_contact1">Phone</label>
+                    <input type="radio" id="email_contact1"
+                        name="contactmethod1"
+                        value="email" required>
+                    <label for="email_contact1">Email</label>
+                    <br><br>
+
+                    <label for="date1">Date:</label>
+                    <input type="date" id="date1" name="date"
+                        min="2023-10-28"
+                        max="2024-12-31" required>
+                    <br><br>
+
+                    <label for="time1">Time:</label>
+                    <input type="time" id="time1" name="time" min="12:00"
+                        max="22:30"
+                        required>
+                    <br><br>
+
+                    <label for="payment_type1">Select your payment type:</label>
+                    <select id="payment_type1" name="payment_type">
+                        <option value="cash">Cash</option>
+                        <option value="card">Debit/Credit Card</option>
+                        <option value="voucher">Voucher</option>
+                        <option value="bitcoin">Bitcoin</option>
+                    </select>
+                    <br><br>
+
+                    <label for="special_request1">Any Requests or anything
+                        we
+                        need to
+                        know beforehand?</label> <br>
+                    <textarea id="special_request1" name="special_request"
+                        cols="30"
+                        rows="10"></textarea>
+                    <br><br>
+
+                    <input type="checkbox" id="cancellation1"
+                        name="cancellation"
+                        required>
+                    <label for="cancellation1">Any cancellation means no
+                        refund</label>
+                    <br>
+
+                    <input type="checkbox" id="newsletter1"
+                        name="newsletter">
+                    <label for="newsletter1">I want to subscribe to the
+                        monthly
+                        newsletter</label>
+                    <br><br>
+
+                    <input type="submit" value="Book a Service">
+                    <br><br>
+
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+            <!-- footer with four columns, last column contains link to about us page-->
+      <footer class="container-fluid text-center">
+        <div class="column1">
+          <p>Vintage Cars Ireland</p>
+          <img src="Images/instagram.png" alt="instagram logo" height="30px">&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="Images/facebook.png" alt="facebook logo" height="30px">&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="Images/whatsapp.png" alt="whatsapp logo" height="30px">&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="Images/youtube.png" alt="youtube logo" height="30px">&nbsp;&nbsp;
+          <!--Instagram logo icons created by Freepik - Flaticon-->
+          <!--Facebook logo icons created by Freepik - Flaticon-->
+          <!--Whatsapp logo icons created by Freepik - Flaticon-->
+          <!--Youtube logo icons created by Freepik - Flaticon-->
+        </div>
+        <div class="column2">
+            <p>Terms and conditions</p>
+            <p>Private policy.</p>
+            <p>Payment methods.</p> 
+        </div>
+        
+        <div class="column3">
+          <div class="phonenumber">
+            <p><img src="Images/phone-flip.png" alt="phone symbol" height="20px">&nbsp;&nbsp;&nbsp;&nbsp;051 278 8932</p>
+          </div>
+          <p>Copyright © 2023, Vintage Cars Ireland</p>
+          <p>All rights reserved.</p>
+        </div>  
+
+        <div class="column4">
+            <p><img src="Images/map-marker.png" alt="map symbol" height="20px">&nbsp;&nbsp;&nbsp;&nbsp;27 O'Brien Street</p>
+            <p>Ballyboden</p>
+            <p>Co. Dublin</p>
+        </div>
+      </footer>
+
+        </body>
+    </html>

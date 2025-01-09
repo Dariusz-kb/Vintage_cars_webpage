@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Required Bootstrap links -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ 
+  <!-- Link to external javascript file -->
+  <script src="myScript.js"></script>
+
+  <!-- Google fonts links-->
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Ephesis&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anek+Kannada:wght@500&family=Galada&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anek+Kannada:wght@300&family=Galada&display=swap" rel="stylesheet">
+
+  <!-- Title of the page -->
+  <title>Vintage Cars | Classic Car Collection</title>
+
+  <!-- The meta description provides a brief summary of the page content -->
+  <meta name="description" content="Explore a stunning collection of vintage cars with rich histories and timeless designs. Our classic car enthusiasts curate a unique experience for enthusiasts.">
+
+  <!-- css stylesheet file link-->
+  <link rel="stylesheet" href="Style/myStyle.css">
+
+</head>
+
+<!-- Use of background image-->
+<body background="Images/background.jpg">
+  <!-- Photo by Mike Bird: https://www.pexels.com/photo/jaguar-emblem-on-black-car-192501/-->
+
+  <!-- header -->
+  <header>
+
+        <!-- main title div containing logo link and title 
+        when the user clicks on the logo,
+         the browser will display the homepage-->
+    <div class="mainTitle">
+      <div class="logo">
+        <a href="index.html">
+          <img src="Images/car.png" alt="logo" height="50px"> 
+            <!--Car logo icons created by Freepik - Flaticon-->
+        </a>
+      </div>
+
+         <!-- div containing main title of the page-->
+      <div class="titleTextDiv">
+        <h1> Vintage Cars Ireland </h1>
+      </div>
+    </div>
+  </header>
+
+    <!-- Navigation bar with links to other web pages
+         it uses bootstrap framework classes for responsive design-->
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#MainNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="MainNavbar">
+        <ul class="nav navbar-nav" id="NavLinks">
+          <li class="navbar-link"><a href="index.html">Home</a></li>
+          <li class="navbar-link"><a href="CarsForSale.html">Cars for sale</a></li>
+          <li class="navbar-link"><a href="service.html">Service</a></li>
+          <li class="navbar-link"><a href="game.html">Mini game</a></li>
+          <li class="navbar-link"><a href="ValueCar.html">Value car</a></li>
+          <li class="navbar-link"><a href="contactUs.html">Contact us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+     
+      <!-- container for carousel -->
+  <div class="container-fluid text-center">    
+    <div class="row content">
+      <div class="col-sm-12 text-center welcomepagetext" id="PageContent"> 
+        <h1>Welcome to Vintage Cars Ireland</h1>
+        <hr>
+
+        <!-- Carusell, Code source w3schools -->
+        <div class="container" id="ccontainer">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+              <li data-target="#myCarousel" data-slide-to="4"></li>
+            </ol>            
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="Images/Carousell/1.jpg" alt="photo-of-classic-car" id="cimage">
+                    <!-- Photo by Shukhrat Umarov: https://www.pexels.com/photo/photo-of-classic-car-1534604/-->
+                <div class="carousel-caption">
+                  <h3 class="cctext">Cars for Sale !</h3>
+                  <p class="cctext">Check our latest stock</p>
+                </div>
+              </div>
+                  <!-- carousell item  -->
+              <div class="item">
+                <img src="Images/Carousell/2.jpg" alt="sepia-photo-of-vehicle" id="cimage">
+                    <!--Photo by Mike Bird: https://www.pexels.com/photo/black-classic-car-inside-the-garage-190537/-->
+                <div class="carousel-caption">
+                  <h3>Make appointment for Service</h3>
+                  <p>Our mechanics will look after you.</p>
+                </div>
+              </div>
+                <!-- carousell item  -->
+              <div class="item">
+                <img src="Images/Carousell/3.jpg" alt="vintage-blue-sedan" id="cimage">
+                    <!-- Photo by neil kelly: https://www.pexels.com/photo/vintage-blue-sedan-712614/-->
+                <div class="carousel-caption">
+                  <h3>Check your memory</h3>
+                  <p>Play our memory game</p>
+                </div>
+              </div>
+                  <!-- carousell item  -->
+              <div class="item">
+                <img src="Images/Carousell/4.jpg" alt="Car valuation" id="cimage">
+                  <!-- Photo by Markus Spiske: https://www.pexels.com/photo/a-mechanical-calculator-4378645/-->
+                <div class="carousel-caption">
+                  <h3>Get your car valuation</h3>
+                  <p> Absolutely free.</p>
+                </div>
+              </div>
+                <!-- carousell item  -->
+              <div class="item">
+                <img src="Images/Carousell/5.jpg" alt="old phone" id="cimage">
+                  <!-- Photo by chepté cormani: https://www.pexels.com/photo/black-rotary-telephone-on-white-surface-1416530/-->
+                <div class="carousel-caption">
+                  <h3>Contact us today</h3>
+                  <p> Don't waste time</p>
+                </div>
+              </div>
+            </div>
+            
+                <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of carousel container -->
+  </div>
+
+  <hr>
+      <!-- Page content  use of bootstrap classes container, row, coloumn, and well-->
+  <div class="container text-center" id="PageContent2">    
+      <!-- row with 2 cloumn size 8 and size 4-->
+    <div class="row" id="Pc2row">
+          <!-- column for an image -->
+      <div class="col-sm-8" id="Pc2col1">
+        <img src="Images/background1.jpg" class="img-responsive" alt="Image">
+            <!-- Photo by Markus Spiske: https://www.pexels.com/photo/grayscale-photo-of-car-interior-9664278/ -->
+      </div>
+          <!-- column small, for displaying text next to image in same row-->
+      <div class="col-sm-4" id="Pc2col2">
+        <div class="containerIndex">
+          <h3> What we do?</h3>
+          <p> We Are classic cars specialist, wheter you buying or selling you are in safe hands. </p>
+            <h3>Why choose Vintage Cars Ireland?</h3>
+            <br>
+          <div id="wellcol2">
+            <ul> 
+              <li>No Fees for listing  </li>
+              <li>Experienced mechanics</li>
+              <li>0% APR</li>
+              <li>Free car valuation</li>
+              <li>Secure payment</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+        <!-- end of row -->
+    </div>
+        <!-- row with 3 columns, each containing icon and some text-->
+    <div class="row" id="Pc2row">
+      <div class="col-sm-12 text-center" id="Pc2col1r2" >
+        <div class="well"> 
+          <div class="row">
+            <div class="col-sm-4">
+              <a href="CarsForSale.html"><img src="Images/icons/icon_Money.png" alt="money bag" height="30px">&nbsp;&nbsp;</a>
+                   <!--https://icons8.com/icon/FL8Hnc4Lih1d/euro-money-->
+              <h4> Want to buy a classic? </h4>
+                <p>Check our latest stock.</p>
+            </div>
+            <div class="col-sm-4">
+              <a href="service.html"><img src="Images/icons/icon_service.png" alt="service car" height="30px">&nbsp;&nbsp;</a>
+              <!--https://icons8.com/icon/AHzRyf2YnLjW/request-service-->
+              <h4> Your car need service? </h4>
+              <p>Book appointment here.</p>
+            </div>
+            <div class="col-sm-4">
+              <a href="ValueCar.html"><img src="Images/icons/icon_sellcar.png" alt="sell car" height="30px">&nbsp;&nbsp;</a>
+              <!--https://icons8.com/icon/ipB3w422Q4br/car-sale-->
+              <h4> Want to sell a car? </h4>
+              <p>Get free valuation.</p>
+            </div>                
+          </div>
+        </div>
+      </div>
+    </div>
+
+        <!-- another row with 1 column contains button link to game page -->
+    <div class="row" id="Pc2row">
+      <div class="col-sm-12 text-center" id="Pc2col1r2" >
+        <div class="well">
+          <h3> Play the game</h3>
+          <p> Try your memory by playing our website game.</p>
+          <a class="btn btn-info" href="game.html" role="button"> Play </a>
+        </div>
+      </div>
+    </div>
+
+        <!-- Subscribe form with input field to enter e-mail
+         java script used to veriffy user corect input format-->
+    <div class="row" id="Pc2row">
+      <div class="col-sm-12 text-center" id="Pc2col1r3">
+        <div class="well">
+            <!-- form for user email entry -->
+        <form name="formEmail" action="" id="emailform">
+          <div class="container" id="SubscribeTitle">
+            <h2>Subscribe to Vintage Cars Ireland</h2>
+            <p>Sign up for updates on our latest classic models.</p>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <input type='text' name='email1'id="email1" placeholder="Email address" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <label>
+                <input type="checkbox" checked="checked" name="subscribe"> I have read and agree to the terms & condition.
+              </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+                    <!-- input field type sumbit onclick calls javascript function -->
+              <input class="buton btn-info" id="subBtn" type="submit" name="submit" value="Submit"  onclick="ValidateEmail(document.formEmail.email1)">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+<!--end of page content-->
+</div>
+
+      <!-- footer with four columns, last column contains link to about us page-->
+<footer class="container-fluid text-center">
+  <div class="column1">
+    <p>Vintage Cars Ireland</p>
+      <img src="Images/instagram.png" alt="instagram logo" height="30px">&nbsp;&nbsp;&nbsp;&nbsp;
+      <img src="Images/facebook.png" alt="facebook logo" height="30px">&nbsp;&nbsp;&nbsp;&nbsp;
+      <img src="Images/whatsapp.png" alt="whatsapp logo" height="30px">&nbsp;&nbsp;&nbsp;&nbsp;
+      <img src="Images/youtube.png" alt="youtube logo" height="30px">&nbsp;&nbsp;
+          <!--Instagram logo icons created by Freepik - Flaticon-->
+          <!--Facebook logo icons created by Freepik - Flaticon-->
+          <!--Whatsapp logo icons created by Freepik - Flaticon-->
+          <!--Youtube logo icons created by Freepik - Flaticon-->
+  </div>
+  <div class="column2">
+    <p>Terms and conditions</p>
+    <p>Private policy.</p>
+    <p>Payment methods.</p> 
+  </div>
+  <div class="column3">
+    <div class="phonenumber">
+      <p><img src="Images/phone-flip.png" alt="phone symbol" height="20px">&nbsp;&nbsp;&nbsp;&nbsp;051 278 8932</p>
+    </div>
+    <p>Copyright © 2023, Vintage Cars Ireland</p>
+    <p>All rights reserved.</p>
+  </div>  
+  <div class="column4">
+    <p><img src="Images/map-marker.png" alt="map symbol" height="20px">&nbsp;&nbsp;&nbsp;&nbsp;27 O'Brien Street</p>
+    <p>Ballyboden</p>
+    <p>Co. Dublin</p>
+  </div>
+</footer>
+
+<!-- end of body-->
+</body>
+    <!-- end of html-->
+</html>
+

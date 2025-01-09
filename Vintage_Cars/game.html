@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Required bootstrap links-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- Link to external javascript file -->
+  <script src="myScript.js"></script>
+ <!-- Google fonts links-->
+ <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Ephesis&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Anek+Kannada:wght@500&family=Galada&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Anek+Kannada:wght@300&family=Galada&display=swap" rel="stylesheet">
+
+ <!-- Title of the page -->
+<title>Vintage Cars | Classic Car Collection</title>
+<!-- The meta description provides a brief summary of the page content -->
+<meta name="description" content="Check out our memory game. Play a game on our website and try to get all answers correct">
+    <!-- css stylesheet file link-->
+    <link rel="stylesheet" href="Style/myStyle.css">
+
+</head>
+    <!-- Use of background image-->
+    <body background="Images/background.jpg">
+      <!-- Photo by Mike Bird: https://www.pexels.com/photo/jaguar-emblem-on-black-car-192501/-->
+
+    <!-- header -->
+    <header>
+        <!-- main title div containing logo link and title 
+        when the user clicks on the logo,
+         the browser will display the homepage-->
+        <div class="mainTitle">
+            <div class="logo">
+                <a href="index.html">
+                  <img src="Images/car.png" alt="logo" height="50px"> 
+                  <!--Car logo icons created by Freepik - Flaticon-->
+                </a>
+            </div>
+            <!-- div containing main title of the page-->
+            <div class="titleTextDiv">
+                <h1> Vintage Cars Ireland </h1>
+            </div>
+        </div>
+      
+    </header>
+  
+   
+    <!-- Navigation bar with links to other web pages
+         it uses bootstrap framework classes it colaps on small screens-->
+         <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#MainNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="MainNavbar">
+              <ul class="nav navbar-nav" id="NavLinks">
+                <li class="navbar-link"><a href="index.html">Home</a></li>
+                <li class="navbar-link"><a href="CarsForSale.html">Cars for sale</a></li>
+                <li class="navbar-link"><a href="service.html">Service</a></li>
+                <li class="navbar-link"><a href="game.html">Mini game</a></li>
+                <li class="navbar-link"><a href="ValueCar.html">Value car</a></li>
+                <li class="navbar-link"><a href="contactUs.html">Contact us</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      
+        <!-- Container for the page content uses bootstrap class-->
+      <div class="container text-center" id="mainContainer">    
+          <div class="col-sm-12 text-center" id="PageContent"> 
+            <h1 id="GamePageWelome">Welcome to game page</h1>
+            <hr>
+           <div class="container text-left" id="gameRules" style="width: 400px;">
+            <h3> Game Rules </h3><br><br>
+            <!-- unordered list for displayng game rules-->
+            <ul class="gameRulesList">
+              <li>To start game just press button <b>Start Game</b></li>
+              <li>Page will display screen with the countdown.</li>
+              <li>When the countdown is over
+                  page will display 5 Cards with picture of vintage car
+                  along with the name of the car, for 3 seconds each.</li>
+              <li>Your taks is to remember the names of the cars in order the were shown.</li>
+              <li>When, the last card was displayd, a popup window will show asking to put name of the car</li>
+              <li>If you enter correct name, the system will notify you and display next window</li>
+              <li>If you enter the wrong name the game is over.</li>
+              <li>For each correct guess you will get 1 point.</li>
+            </ul>
+
+            <p><span>Are you ready?</span><br><br>
+                 Press start button to start the game.
+                 </p>
+           </div>
+        <!-- Container for the game content uses bootstrap class container and card-->
+   
+        <div class="container" id="GameContent">
+            <div class="card" id="cardImage" >
+              <!-- image source: https://www.vecteezy.com/vector-art/1396872-black-and-white-car-front-drawing -->
+                <img class="card-img-top" src="Images/Game/game0.jpg" alt="black-and-white-car" id="gameImage">
+                <div class="card-body">
+                  <p class="card-text" id="carName"></p>
+                  <p id="carYear"></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- hidden container for game over display and score-->
+        <div class="container" id="gameover">
+          <h1 id="gameovertitle"></h1>
+          <p id="gameovertext"></p>
+          <h4> Total Score: </h4>
+            <p id="Score"></p>
+        </div>
+
+     <!-- button to start game-->
+
+        <button onclick="StartGame()" id="Start_Game_Button"> Start Game </button><br><br>
+
+        <a href="index.html"> Go back to Home Page</a><br><br>
+    
+    </div>
+  </div> 
+<!-- footer with four columns, last column contains link to about us page-->
+<footer class="container-fluid text-center">
+  <div class="column1">
+    <p>Vintage Cars Ireland</p>
+    <img src="Images/instagram.png" alt="instagram logo" height="30px">&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="Images/facebook.png" alt="facebook logo" height="30px">&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="Images/whatsapp.png" alt="whatsapp logo" height="30px">&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="Images/youtube.png" alt="youtube logo" height="30px">&nbsp;&nbsp;
+    <!--Instagram logo icons created by Freepik - Flaticon-->
+    <!--Facebook logo icons created by Freepik - Flaticon-->
+    <!--Whatsapp logo icons created by Freepik - Flaticon-->
+    <!--Youtube logo icons created by Freepik - Flaticon-->
+  </div>
+  <div class="column2">
+      <p>Terms and conditions</p>
+      <p>Private policy.</p>
+      <p>Payment methods.</p> 
+  </div>
+  
+  <div class="column3">
+    <div class="phonenumber">
+      <p><img src="Images/phone-flip.png" alt="phone symbol" height="20px">&nbsp;&nbsp;&nbsp;&nbsp;051 278 8932</p>
+    </div>
+    <p>Copyright © 2023, Vintage Cars Ireland</p>
+    <p>All rights reserved.</p>
+  </div>  
+
+  <div class="column4">
+      <p><img src="Images/map-marker.png" alt="map symbol" height="20px">&nbsp;&nbsp;&nbsp;&nbsp;27 O'Brien Street</p>
+      <p>Ballyboden</p>
+      <p>Co. Dublin</p>
+  </div>
+</footer>
+
+    <!-- end of body-->
+    </body>
+    <!-- end of html-->
+    </html>
+
+

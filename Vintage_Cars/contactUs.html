@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="myScript.js"></script>
+  <!-- Google fonts links-->
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Ephesis&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anek+Kannada:wght@500&family=Galada&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anek+Kannada:wght@300&family=Galada&display=swap" rel="stylesheet">
+
+<!-- Title of the page -->
+<title>Vintage Cars | Classic Car Collection</title>
+<!-- The meta description provides a brief summary of the page content -->
+<meta name="description" content="Contact us to enquire about any of our cars our services. Reach out by phone, email or call to our store. Add or read reviews from our customers.">
+
+    <!-- css stylesheet file link-->
+    <link rel="stylesheet" href="Style/myStyle.css">
+
+</head>
+
+    <!-- Use of background image-->
+    <body background="Images/background.jpg">
+        <!-- Photo by Mike Bird: https://www.pexels.com/photo/jaguar-emblem-on-black-car-192501/-->
+    <!-- header -->
+    <header>
+        <!-- main title div containing logo link and title 
+        when the user clicks on the logo,
+         the browser will display the homepage-->
+        <div class="mainTitle">
+            <div class="logo">
+                <a href="index.html">
+                  <img src="Images/car.png" alt="logo" height="50px"> 
+                  <!--Car logo icons created by Freepik - Flaticon-->
+                </a>
+            </div>
+            <!-- div containing main title of the page-->
+            <div class="titleTextDiv">
+                <h1> Vintage Cars Ireland </h1>
+            </div>
+        </div>
+    </header>
+    <!-- Navigation bar with links to other web pages
+         it uses bootstrap framework classes-->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#MainNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="MainNavbar">
+            <ul class="nav navbar-nav" id="NavLinks">
+              <li class="navbar-link"><a href="index.html">Home</a></li>
+              <li class="navbar-link"><a href="CarsForSale.html">Cars for sale</a></li>
+              <li class="navbar-link"><a href="service.html">Service</a></li>
+              <li class="navbar-link"><a href="game.html">Mini game</a></li>
+              <li class="navbar-link"><a href="ValueCar.html">Value car</a></li>
+              <li class="navbar-link"><a href="contactUs.html">Contact us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!--heading of page-->
+  <div class="contactusheadding text-center">
+    <h2>Our contact details</h2>
+  </div>
+  <hr>
+
+    <div class="container text-center" id="page6apparent">
+        <br><br>
+        <div id="abg"></div> <br><br>
+
+        <section id="location">
+            <h2>Our Location</h2>
+            <address>
+                27 O'Brien Street<br>
+                Ballyboden<br>
+                Co. Dublin<br>
+            </address>
+            <div class="container" id="mapimagecontainer">
+            <img class="img-responsive" src="Images/maps.png" alt="Our Location" id="mapimage">
+        </div>
+        </section>
+
+        <br> <br>
+
+        <div class="container" id="contactcontainer">
+         <div id="email2">
+             Email: info@vintagecarsireland.com
+            </div>
+        <div id="phonenumber"> Phone number: 051 278 8932 </div>
+        <div id="openinghours"> Opening hours: 12:00-23:30</div><br>
+        <button id="contactBtn">Contact Us</button> <br><br>
+        </div>
+
+
+        <div id="contactForm" style="display: none;">
+
+            <!-- Contact Form -->
+            <form id="contactUsForm">
+                <label for="contactName">Your Name:</label>
+                <input type="text" id="contactName" name="contactName"
+                    required><br><br>
+
+                <label for="contactEmail">Your Email:</label>
+                <input type="email" id="contactEmail" name="contactEmail"
+                    required><br><br>
+
+                <label for="contactMessage">Your Message/Comment:</label><br>
+                <textarea id="contactMessage" name="contactMessage" rows="4"
+                    required></textarea><br><br>
+
+                <input type="submit" value="Send Message">
+            </form>
+        </div>
+
+        
+
+            <section id="leaveReview">
+                <h2>Leave a Review</h2>
+                <form id="reviewForm" style="padding-bottom: 10px;">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required><br>
+
+                    <label><br>Rating:</label>
+                    <!-- Star rating inputs -->
+                    <div class="star-rating">
+                        <input type="radio" id="star1" name="rating"
+                            value="5"><label
+                            for="star1"></label>
+                        <input type="radio" id="star2" name="rating"
+                            value="4"><label
+                            for="star2"></label>
+                        <input type="radio" id="star3" name="rating"
+                            value="3"><label
+                            for="star3"></label>
+                        <input type="radio" id="star4" name="rating"
+                            value="2"><label
+                            for="star4"></label>
+                        <input type="radio" id="star5" name="rating"
+                            value="1"><label
+                            for="star5"></label>
+                    </div><br>
+
+                    <label for="review">Your Review:</label> <br>
+                    <textarea id="review" name="review" rows="4" required></textarea><br>
+
+                    <input type="submit" value="Submit Review">
+                </form>
+            </section>
+
+            <section id="previousReviews">
+                <h2 id="reviewsHeading" style="display: none;">Reviews:
+                </h2>
+                <div id="reviewsContainer">
+                    <!-- Reviews will be dynamically added here using JavaScript -->
+                </div>
+            </section>
+
+        </div>
+   
+        <!-- footer with four columns, last column contains link to about us page-->
+      <footer class="container-fluid text-center">
+        <div class="column1">
+          <p>Vintage Cars Ireland</p>
+          <img src="Images/instagram.png" alt="instagram logo" height="30px">&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="Images/facebook.png" alt="facebook logo" height="30px">&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="Images/whatsapp.png" alt="whatsapp logo" height="30px">&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="Images/youtube.png" alt="youtube logo" height="30px">&nbsp;&nbsp;
+          <!--Instagram logo icons created by Freepik - Flaticon-->
+          <!--Facebook logo icons created by Freepik - Flaticon-->
+          <!--Whatsapp logo icons created by Freepik - Flaticon-->
+          <!--Youtube logo icons created by Freepik - Flaticon-->
+        </div>
+        <div class="column2">
+            <p>Terms and conditions</p>
+            <p>Private policy.</p>
+            <p>Payment methods.</p> 
+        </div>
+        
+        <div class="column3">
+          <div class="phonenumber">
+            <p><img src="Images/phone-flip.png" alt="phone symbol" height="20px">&nbsp;&nbsp;&nbsp;&nbsp;051 278 8932</p>
+          </div>
+          <p>Copyright © 2023, Vintage Cars Ireland</p>
+          <p>All rights reserved.</p>
+        </div>  
+
+        <div class="column4">
+            <p><img src="Images/map-marker.png" alt="map symbol" height="20px">&nbsp;&nbsp;&nbsp;&nbsp;27 O'Brien Street</p>
+            <p>Ballyboden</p>
+            <p>Co. Dublin</p>
+        </div>
+      </footer>
+
+
+
+        <script>
+            document.getElementById("contactBtn").addEventListener("click", function() {
+              var form = document.getElementById("contactForm");
+              if (form.style.display === "none") {
+                form.style.display = "block";
+              } else {
+                form.style.display = "none";
+              }
+            });
+            </script>
+    
+                <script>
+            // Initialize an array to store reviews
+            const reviews = [];
+    
+            // Function to handle form submission and add reviews
+            document.getElementById("reviewForm").addEventListener("submit", function (event) {
+                event.preventDefault();
+    
+        // Get form inputs
+        const nameInput = document.getElementById("name");
+        const ratingRadioButtons = document.querySelectorAll('.star-rating input[type="radio"]:checked');
+        const reviewTextArea = document.getElementById("review");
+    
+    // Check if the elements exist and the rating is selected
+    if (nameInput && ratingRadioButtons.length > 0 && reviewTextArea) {
+            const name = nameInput.value;
+            const rating = ratingRadioButtons[0].value;
+            const reviewText = reviewTextArea.value;
+    
+            // Create a review object
+            const review = {
+                name: name,
+                rating: rating,
+                reviewText: reviewText,
+            };
+    
+            // Add the review to the array
+            reviews.push(review);
+    
+            if (reviews.length > 0) {
+            document.getElementById("reviewsHeading").style.display = "block";
+        } 
+    
+            // Clear form inputs
+            nameInput.value = "";
+            reviewTextArea.value = "";
+            ratingRadioButtons.forEach(radio => radio.checked = false);
+    
+            // Display reviews
+            displayReviews();
+        } else {
+            alert("Please select a rating before submitting.");
+        }
+        
+            });
+    
+            // Function to display reviews
+            function displayReviews() {
+                const reviewsContainer = document.getElementById("reviewsContainer");
+                reviewsContainer.innerHTML = ""; // Clear existing reviews
+    
+                reviews.forEach((review, index) => {
+                    const reviewDiv = document.createElement("div");
+                    reviewDiv.classList.add("review");
+                    reviewDiv.innerHTML = `
+                        <h3>${review.name}</h3>
+                        <p>Rating: ${review.rating} Stars</p>
+                        <p>${review.reviewText}</p>
+                    `;
+                    reviewsContainer.appendChild(reviewDiv);
+                });
+            }
+    
+            // Initial display of reviews
+            displayReviews();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="myScript.js"></script>
+     <!-- Google fonts links-->
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Ephesis&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anek+Kannada:wght@500&family=Galada&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anek+Kannada:wght@300&family=Galada&display=swap" rel="stylesheet">
+
+    
+<!-- Title of the page -->
+<title>Vintage Cars | Classic Car Collection</title>
+<!-- The meta description provides a brief summary of the page content -->
+<meta name="description" content="Value your current vintage car for cash or for trade-in value. We offer fair, honest prices with quick, free evaluations. Please enquire via the form.">
+
+    <!-- css stylesheet file link-->
+    <link rel="stylesheet" href="Style/myStyle.css">
+</head>
+
+<body background="Images/background.jpg">
+  <!-- Photo by Mike Bird: https://www.pexels.com/photo/jaguar-emblem-on-black-car-192501/-->
+
+  <!-- header -->
+  <header>
+    <!-- main title div containing logo link and title when the user clicks on the logo, the browser will display the homepage-->
+    <div class="mainTitle">
+      <div class="logo">
+        <a href="index.html">
+          <img src="Images/car.png" alt="logo" height="50px"> 
+          <!--Car logo icons created by Freepik - Flaticon-->
+        </a>
+      </div>
+      <div class="titleTextDiv">
+        <h1> Vintage Cars Ireland </h1>
+      </div>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#MainNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="MainNavbar">
+        <ul class="nav navbar-nav" id="NavLinks">
+          <li class="navbar-link"><a href="index.html">Home</a></li>
+          <li class="navbar-link"><a href="CarsForSale.html">Cars for sale</a></li>
+          <li class="navbar-link"><a href="service.html">Service</a></li>
+          <li class="navbar-link"><a href="game.html">Mini game</a></li>
+          <li class="navbar-link"><a href="ValueCar.html">Value car</a></li>
+          <li class="navbar-link"><a href="contactUs.html">Contact us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!--heading of page-->
+  <div class="valuecarheading">
+    <h2>Trade in your classic car</h2>
+  </div>
+  <hr>
+
+  <!--paragraph of page-->
+  <div class="valuecartextbox">
+    <p>We buy cars for cash or provide trade-ins against the price of one of our own.</p> 
+    <p>Please submit your classic car's details via the form below and we will get in touch shortly:</p>
+  </div>
+
+  <!--value car form with JS function validateForm() which initiates on form submission-->
+  <form class="valuecar" name="valuecarform" onsubmit = "return validateForm()">
+    <!--first row of the form-->
+    <div class="form-row">
+      <!--blank column in the first row so to centre the proceeding rows as there are 12 columns in a bootstrap grid-->
+      <div class="col-md-1"></div>
+      <!--5 column wide first name text type input, a placeholder of 'first name' further informs the user -->
+      <div class="col-md-5">
+        <label for="fname" class="form-label">First Name</label>
+        <input type="text" class="form-control" id="Fname" placeholder="First Name">
+        <!--blank space for text held for form validation signalling when user forgets to fill in a space-->
+        <p id="fnamevalidation"></p>
+      </div>
+      <!--5 column form input for the last name-->
+      <div class="col-md-5">
+        <label for="lname" class="form-label">Last Name</label>
+        <input type="text" class="form-control" id="Lname" placeholder="Last Name">
+        <p id="lnamevalidation"></p>
+      </div>
+      <!--blank column at end to centre inputs-->
+      <div class="col-md-1"></div> 
+    </div> <!--end of row-->
+
+    <!--second row of the form-->
+    <div class="form-row">
+      <div class="col-md-1"></div>
+      <!--5 column input of email type with example placeholder and space left for text on form validation-->
+      <div class="col-md-5">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="JonDoe@gmail.com">
+        <p id="emailvalidation"></p>
+      </div>
+      <!--5 column input of tel type with example placeholder and space left for text on form validation-->
+      <div class="col-md-5">
+        <label for="phone" class="form-label">Phone</label>
+        <input type="tel" class="form-control" id="phone" placeholder="0871234567">
+        <p id="phonevalidation"></p>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+
+
+    <!--third row of the form-->
+    <div class="form-row">
+      <div class="col-md-1"></div>
+      <!--5 column drop down selection for trade in or sell car options-->
+      <div class="col-md-5">
+        <label for="Selection">Trade or Sell</label>
+        <select name="Selection" id="Selection" class="form-control" >
+          <option value="Trade in">Trade in</option>
+          <option value="Sell">Sell</option>
+        </select>
+      </div>
+      <!--5 column file type input for uploading pictures of car-->
+      <div class="col-md-5">
+        <label for="mycarpic">Pictures of car</label>
+        <input type="file" id="mycarpic" name="mycarpic" class="form-control">
+      </div>    
+      <div class="col-md-1"></div>
+    </div>
+
+    <!--fourth row of the form-->
+    <div class="form-row">
+      <div class="col-md-1"></div>
+      <!--5 column input of type text for car registration with example placeholder and space for validation text if required-->
+      <div class="col-md-5">
+        <label for="reg" class="form-label">Registration</label>
+        <input type="text" class="form-control" id="reg" placeholder="12AA3456"> 
+        <p id="registrationvalidation"></p>
+      </div>
+      <!--2 column number tyoe input for entering odemeter reading of car-->
+      <div class="col-md-2">
+        <label for="odemeter" class="form-label">Odemeter</label>
+        <input type="number" class="form-control" id="odemeter" placeholder="123456">
+      </div>
+      <!--3 column radio input to select either km or miles for odemeter reading, Km automatically checked-->
+      <div class="col-md-3">
+        <div class="form-check">
+          <label class="form-check-label" for="odemeter">Km</label>
+          <input class="form-check-input" type="radio" name="odemeter" id="flexRadioDefault1" checked>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label" for="odemeter">Miles</label>
+          <input class="form-check-input" type="radio" name="odemeter" id="flexRadioDefault2">
+        </div>
+      </div>    
+    </div>    
+  
+            
+    
+    
+    <div class="form-rowlast">
+      <div class="col-md-1"></div>
+      <!--5 column checkbox input for terms and conditions and contact consent with shared validation text if required-->
+      <div class="col-md-5">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="checkbox1">
+        <label class="form-check-label" for="checkbox1">I agree with the Terms & Conditions & Privacy policy.</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="checkbox2">
+        <label class="form-check-label" for="checkbox2">I consent to being contacted in relation to the above</label>
+      </div>
+      <p id="checkboxvalidation"></p>
+      </div>
+      <!--5 column submit button for the from-->
+      <div class="col-md-5">
+        <input type="submit" value="Submit"class="btn btn-secondary btn-lg btn-block"></input>
+      </div>
+      <div class="col-md-1"></div>
+      </div>
+  </form> <!--end of form-->
+
+
+
+  <!--4 grid layout footer-->
+ <!-- footer with four columns, last column contains link to about us page-->
+ <footer class="container-fluid text-center">
+  <div class="column1">
+    <p>Vintage Cars Ireland</p>
+    <img src="Images/instagram.png" alt="instagram logo" height="30px">&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="Images/facebook.png" alt="facebook logo" height="30px">&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="Images/whatsapp.png" alt="whatsapp logo" height="30px">&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="Images/youtube.png" alt="youtube logo" height="30px">&nbsp;&nbsp;
+    <!--Instagram logo icons created by Freepik - Flaticon-->
+    <!--Facebook logo icons created by Freepik - Flaticon-->
+    <!--Whatsapp logo icons created by Freepik - Flaticon-->
+    <!--Youtube logo icons created by Freepik - Flaticon-->
+  </div>
+  <div class="column2">
+      <p>Terms and conditions</p>
+      <p>Private policy.</p>
+      <p>Payment methods.</p> 
+  </div>
+  
+  <div class="column3">
+    <div class="phonenumber">
+      <p><img src="Images/phone-flip.png" alt="phone symbol" height="20px">&nbsp;&nbsp;&nbsp;&nbsp;051 278 8932</p>
+    </div>
+    <p>Copyright © 2023, Vintage Cars Ireland</p>
+    <p>All rights reserved.</p>
+  </div>  
+
+  <div class="column4">
+      <p><img src="Images/map-marker.png" alt="map symbol" height="20px">&nbsp;&nbsp;&nbsp;&nbsp;27 O'Brien Street</p>
+      <p>Ballyboden</p>
+      <p>Co. Dublin</p>
+  </div>
+</footer> <!--end of footer-->
+</body>
+
+</html>

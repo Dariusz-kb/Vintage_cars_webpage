@@ -1,0 +1,690 @@
+
+header{
+    margin-top: auto;
+}
+
+/* style for the headings */
+.welcomepagetext, .valuecarheading, .carsforsaleintrotext,
+ .GamePageWelome, .availableservicesheadding, .contactusheadding {
+    font-family: 'Anek Kannada', sans-serif;
+    text-align: center;
+    height: 5%;
+    margin-top: 5%;
+}
+
+/* body, backgroung settings  */
+body{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/* main title and logo settings*/
+.mainTitle{
+    height: 20%;
+    display: flex;
+    justify-content:center;
+    background-color: #0c3220;
+}
+.logo{
+    margin-top: 38px;
+}
+
+/* title text using google fonts */
+.titleTextDiv{
+    margin: 30px;
+    height: 20%;
+    color: white;
+    font-size: 40px;
+    font-family: 'Galada', cursive;
+}
+
+/* nav menu text using google fonts */
+#MainNavbar{
+    font-family: 'Anek Kannada', sans-serif;
+}
+
+/* nav menu settings */
+.navbar {
+    margin-bottom: 5%;
+    border:none;
+    text-align: center;
+    background-color:#0c3220;
+    display: flex;
+    justify-content: center;
+}
+
+#PageContent{
+    margin: auto;
+}
+
+
+/* Carousel settings*/
+#ccontainer{
+    width: 600px;
+    margin-left: auto;
+    
+}
+#cimage{
+    height: 400px;
+    width: 100%;
+}
+.carousel-caption{
+
+    background-color: rgba(12, 12, 11, 0.5);
+}
+
+/* index page settings */
+#PageContent2{
+    font-family: 'Anek Kannada', sans-serif;
+    margin-top: 5%;
+}
+
+/* index page styling text */
+.containerIndex {
+    width: 100%; 
+    font-family: 'Anek Kannada', sans-serif;
+    margin-top: 20%
+}
+
+/* index page positioning text */
+.containerIndex h3 {
+    margin-top: 20%;
+}
+
+/* index page positioning text */
+.containerIndex li {
+text-align: left;
+margin-left: -10px;
+}
+
+/* rows styling */
+#Pc2row{
+    background-color: #0c3220;
+        margin-left: auto;
+        margin-right: auto;
+        color:#0c3220;
+    }
+    
+    .gameRulesList {
+        width: 140%;
+        margin-left: -50px;
+    }
+    #col2r1{
+        width: 100%;
+        font-family: 'Ephesis', cursive;
+    }
+/* columns styling */
+#Pc2col1{
+    padding-top: 10px;
+    padding-bottom: 10px;
+ 
+}
+/*remove underline from link text*/
+#Pc2col1r2 a{
+    text-decoration: none;
+}
+#Pc2col1r2 button{
+    padding: 10px;
+    width: 100px;
+}
+#Pc2col2{
+    margin: auto;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+#Pc2col1r3{
+    margin-bottom: 10px;
+}
+/* class well styling */
+.well{
+    padding: 10px;
+    padding-bottom: 10px;
+    margin:5px;
+    width: 100%;
+}
+
+#wellcol2{
+    display:flex;
+    justify-content: center;
+    margin:5px;
+    width: 100%;
+}
+/* subscribe form settings for index page */
+#SubscribeTitle{
+    padding: 10px;
+    width: 100%;
+}
+
+#email1{
+    width: 70%;
+} 
+
+/* Game page settings */
+#GamePageWelome{
+    font: bold;
+    font-family: 'Ephesis', cursive;  /* use of google fonts*/
+  }
+
+#mainContainer{
+    min-height: 600px;
+    font-size: 20px;
+    font-family: 'Anek Kannada', sans-serif;
+    /* use of google fonts*/
+}
+
+
+#GameContent{
+    display: none; /* hide game content */
+    height: 480px;
+    width: 660px;
+    margin-bottom: 25px;
+    animation: myOpacityOn 2s; /* calling key frames animation*/
+}
+
+/* opacity animation for game content */
+@keyframes myOpacityOn {
+    0%{ opacity: 0;}
+    100%{ opacity: 1;}
+   }
+
+  .card {
+    border: 5px solid black;
+    background-color: rgb(232, 206, 165);
+
+     }
+.card-img-top{
+    height: 400px;
+    width: 600px;
+    padding-top: 5px;
+    
+}
+.card-text{
+    font-size: xx-large;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+
+#Start_Game_Button{
+    background-color: #0c3220;
+    color: white;
+}
+
+#gameover{
+    display: none;
+    color: red;
+}
+
+/* footer styling - padding, green background color, white centered text*/
+footer {
+    padding: 3%;
+    background-color:#0c3220;
+    color: white;
+    text-align: center;
+    margin-top: 5%;
+}
+
+/* create 4 grid horizontal pattern for footer each 25% of the page */
+.column1, .column2, .column3, .column4 {
+    float: left;
+    width: 25%;
+    margin: 0;
+}
+
+/* set font type for company name and size in footer*/
+.column1 {
+    font-family: 'Galada', cursive;
+    font-size: 30px;
+}
+
+/* set font type, size and thickness for other columns in footer*/
+.column2, .column3, .column4 {
+    font-family: 'Anek Kannada', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+}
+ 
+  
+/*cars for sale page specific styling*/
+
+/* for the gallery pictures, set the cursor to a point when user hovers over and add padding */
+.gallerypicture {
+    cursor: pointer;
+    padding: 5%;
+}
+
+/* add respnisive resizing of image to fill thumbnail */
+.thumbnail, .gallerypicture img {
+    width: 100%; 
+    height: 100%;
+}
+
+/* add styling to thumbnail eg radius, bshadows, set size, mrgin centre */
+.thumbnail {
+    border-radius: 9px;
+    box-shadow: 0 0 17px rgba(0, 0, 0, 0.6);
+    width: 80%;
+    max-width: 80%;
+    margin-left: auto; /* centre the thumbnail in their div*/
+    margin-right: auto;
+    position: relative; /* so the image text can be lined up against it*/
+    overflow: hidden;
+}    
+
+/*style the image text and add backgroud color with opacity so text is clear */
+.imagetext {
+    position: absolute; /* so the image text can be lined up against thumnail*/
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    font-family: 'Anek Kannada', sans-serif;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 9px;
+    display: none; /* set display to none so image is not seen until clicked */
+}
+
+
+.imagetext p {
+    text-align: center;
+    margin: 35% 0; /* position text in centre of div and make responisive */
+}
+
+
+/* make a 4 grid layout for text under the gallery and style text */
+.column {
+    float: left;
+    width: 25%;
+    font-size: 20px;
+    font-family: 'Anek Kannada', sans-serif;
+    text-align: center;
+    margin-top: 4%;
+}
+#buyeroptionscontainer{
+    display: inline-block;
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+}
+
+
+
+  /* Clear floats after the columns */
+.buyeroptionscontainer:after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
+/*add margin to top of gallery */
+.gallery {
+    margin-top: 4%;
+}
+
+/*value car specific*/
+
+/* positon value car form, add and style border */
+.valuecar {
+    max-width: 70%; /*width of form*/
+    margin: auto; /*centre form*/
+    height: 25%; 
+    margin-top: 5%;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    margin-bottom: 8%;
+    outline-style: ridge;
+    outline-color: rgb(183, 177, 177);
+    outline-width: 2px;
+}    
+
+
+.form-row, .form-rowlast {
+    height: 100px; /* add gaps between rows*/
+}
+
+.col-md-3 {
+    display: flex;  /* positions radio buttons side by side */
+    gap: 10%; /* gap betwen radio buttons*/
+}
+
+/* style radio buttoms to be the same size as other inputs*/
+input[type=radio] {
+    border: 0px;
+    width: 100%;
+    height: 2em;
+}
+
+/* style the validation text of each form input*/
+.form-row p, .form-rowlast p {
+    font-size: 15px;
+    margin-top: 8px;
+    margin-left: 5px;
+    font-family: 'Anek Kannada', sans-serif;
+    color: rgba(164, 3, 3, 0.803);
+}
+
+/* style the value car form heading and the carsforsaleintor text */
+.valuecarheading, .carsforsaleintrotext {
+    font-family: 'Anek Kannada', sans-serif;
+    text-align: center;
+    height: 5%;
+    margin-top: 5%;
+}
+
+/* style the value car text box*/
+.valuecartextbox {
+    font-family: 'Anek Kannada', sans-serif;
+    text-align: center;
+    height: 20%;
+    margin-top: 5%;
+    font-size: 20px;
+}
+
+
+table {
+    margin: 0 auto;
+    width: auto;
+}
+
+td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.image-container {
+    cursor: pointer;
+}
+
+.description {
+    display: none;
+    margin-top: 10px;
+    max-width: 250px;
+    word-wrap: break-word;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.booking-form {
+    display: none;
+    margin-top: 20px;
+}
+
+.star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.star-rating input[type="radio"] {
+    display: none;
+}
+
+.star-rating label {
+    font-size: 30px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.star-rating label:before {
+    content: "\2605";
+}
+
+.star-rating input[type="radio"]:checked~label:before {
+    content: "\2605";
+    color: gold;
+}
+
+
+#ServiceType {
+    font-size: x-large;
+    font-weight: bold;
+    font-family: 'Anek Kannada', sans-serif;
+}
+
+.image-container {
+    margin: auto;
+    padding: 5px;
+    padding-bottom: 10px;
+    max-width: 90%;
+    word-wrap: break-word;
+
+}
+
+#page3apparent {
+    position: relative;
+    margin-top: 0%;
+    width: 60%;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+#page3apparent2 {
+    position: relative;
+    margin-top: 0%;
+    width: 60%;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+#address {
+    font-family: 'Anek Kannada', sans-serif;
+    font-size: 25px;
+}
+
+#email2 {
+    font-family: 'Anek Kannada', sans-serif;
+    font-size: 25px;
+}
+
+#phonenumber {
+    font-family: 'Anek Kannada', sans-serif;
+    font-size: 25px;
+}
+
+#openinghours {
+    font-family: 'Anek Kannada', sans-serif;
+    font-size: 25px;
+}
+
+
+
+#page6apparent {
+    position: relative;
+    margin-top: 0%;
+    width: 60%;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 2px;
+}
+
+#mapimagecontainer{
+    padding-left: 0px;
+    padding-right: 12px;
+    width: 100%;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+#contactcontainer{
+    padding: 0px;
+    width: 80%;
+    margin: 15px;
+    display: inline-block;
+    justify-content: center;
+}
+
+
+#mapimage{
+    width:350px;
+    
+}
+
+
+#abg {
+    position: absolute;
+    background-color: lightgrey;
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+    Z-index: -1;
+  
+}
+
+#routineMaintenanceService,
+#restorationService,
+#preservationService,
+#performanceEnhancementService {
+    font-family: 'Anek Kannada', sans-serif;
+    font-size: 30px;
+}
+
+.image-container:hover {
+    transform: scale(1.1);
+}
+
+
+
+/* value car form reponsiveness under 1000px - add gaps between form inputs on a single line*/
+@media screen and (max-width: 1000px) {
+    .form-row {
+        margin-bottom: 80px;
+    }
+    .col-md-3, .col-md-4, .col-md-2, .col-md-5 {
+        margin-bottom: 30px;
+    }
+    .form-rowlast {
+        margin-top: 160px;
+    }
+}    
+
+/* extend end of value car form on smaller screen to allow elongated form to fit in border*/
+@media screen and (max-width: 700px) {
+    .form-row {
+        margin-bottom: 80px;
+    }
+    .col-md-3, .col-md-4, .col-md-2, .col-md-5 {
+        margin-bottom: 30px;
+    }
+    .form-rowlast {
+        margin-top: 160px;
+        margin-bottom: 100px;
+    } 
+
+    /* add padding to text box above form so that the text is not extending to the page border*/
+    .valuecartextbox {
+        padding: 10%;
+    } 
+
+    #page3apparent {
+       
+        width: 80%;
+       
+    }
+    #page3apparent2 {
+       
+        width: 80%;
+       
+    }
+
+}
+
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+    .mainTitle{
+        margin-left: auto;
+        margin-right: auto;
+        size-adjust: 50%;  
+    }
+    /* put footer in double rows on small screen with gaps between each row*/
+    .column1, .column2, .column3, .column4 {
+        width: 50%;
+        height: 120px;
+    }
+    /* carousell settings for small screen*/
+    #ccontainer{
+        width: 300px;
+    }
+    #cimage{
+        height: 200px;
+        width: 100%;
+    }
+
+    #Pc2col2{
+        padding-bottom: 2px;
+    }
+
+    .well{
+        margin:2px;
+        width: 100%;
+    }
+
+    #wellcol2{
+        display:flex;
+        justify-content: center;
+        margin:2px;
+        width: 100%;
+    }
+    #SubscribeTitle{
+        padding: 10px;
+        width: 80%;
+    }
+
+    /* game setting for small screens */
+    .card-img-top{
+        height: 200px;
+        width: 280px;
+        padding-top: 2px;
+    }
+  
+    #GameContent{
+        height: 240px;
+        width: 330px;
+        margin-bottom: 50px;
+        padding-bottom: 25px;
+
+    }
+    /* adjust fonts for small screen contact us page*/
+    #email2 {
+        font-size: 15px;
+    }
+    
+    #phonenumber {
+        font-size: 15px;
+    }
+    
+    #openinghours {
+        font-size: 15px;
+    }
+    #page6apparent {
+        
+        width: 80%;
+     
+    }
+
+}
+@media screen and (max-width: 550px) {
+    /* put footer in single rows on small screenwith gaps between each row*/
+    .column1, .column2, .column3, .column4 {
+        width: 100%;
+        height: 120px;
+    }   
+    
+       /* make game rules moire narrow to fit smaller screen */  
+       .gameRulesList {
+        width: 100%;
+        margin-left: -50px;
+    } 
+    
+}     
